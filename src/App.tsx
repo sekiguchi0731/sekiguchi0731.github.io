@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import About from "./components/About";
+import Club from "./components/Club";
+import Major from "./components/Major";
+import Experience from "./components/Experience";
+import "./components/Global.scss";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        {/* Header は常に表示 */}
+        <Header />
+
+        {/* メインコンテンツ部分 */}
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/club" element={<Club />} />
+            <Route path="/major" element={<Major />} />
+            <Route path="/experience" element={<Experience />} />
+          </Routes>
+        </div>
+
+        {/* Footer も常に表示 */}
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

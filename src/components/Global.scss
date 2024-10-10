@@ -1,0 +1,47 @@
+/* カード共通デザイン */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  max-width: 600px;
+  width: 70%;
+  margin: 20px auto;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin: 5px 0 10px;
+    color: #777;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .contact-info {
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+/* 共通のコンテナレイアウト */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f4f4f4;
+}
