@@ -1,4 +1,12 @@
 /* カード共通デザイン */
+.about, .home, .major, .experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f4f4f4;
+}
+
 .card {
   background-color: white;
   border-radius: 10px;
