@@ -13,7 +13,8 @@ const About: React.FC = () => {
             <span>Email:</span> g2120522[at]is.ocha.ac.jp
           </p>
           <p className="about-contact">
-            <span>Phone:</span> +81-123-456-7890
+            <span>Address:</span> 〒112-8610 東京都文京区大塚2-1-1
+            理学部3号館407
           </p>
         </div>
       </div>

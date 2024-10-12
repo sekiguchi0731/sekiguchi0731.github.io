@@ -7,6 +7,7 @@ import About from "./components/About";
 import Club from "./components/Club";
 import Major from "./components/Major";
 import Experience from "./components/Experience";
+import Achievement from "./components/Achievement";
 import "./components/Global.scss";
 
 const App: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
             <Route path="/club" element={<Club />} />
             <Route path="/major" element={<Major />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/achievement" element={<Achievement />} />
           </Routes>
         </div>
 

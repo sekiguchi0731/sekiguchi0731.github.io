@@ -24,6 +24,9 @@ const Header: React.FC = () => {
           <li>
             <Link to="/experience">Experience</Link>
           </li>
+          <li>
+            <Link to="/achievement">Achievement</Link>
+          </li>
         </ul>
       </nav>
     </header>
